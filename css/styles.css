@@ -542,6 +542,7 @@ background: #2E2F42;
 color: #e7e9fc;
 border: 1px solid rgba(255, 255, 255, 0.3);
 border-radius: 4px;
+padding-left: 16px;
 }
 .footer-input:focus{
   outline: transparent;
@@ -592,9 +593,10 @@ border-radius: 4px;
   justify-content: center;
   margin-left: auto;
   margin-bottom: 24px;
-  transition-property: border-color;
+  transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .modal-button:is(:hover, :focus){
   fill: #FFFFFF;
@@ -606,7 +608,7 @@ border-radius: 4px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  margin-bottom: 34px;
+  margin-bottom: 16px;
 }
 .modal-field {
   margin-bottom: 8px;
@@ -674,6 +676,7 @@ border-radius: 4px;
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-top: 16px;
 }
 .check-text span{
 width: 16px;
@@ -693,12 +696,13 @@ fill:transparent;
 }
 .policy-link{
   margin-left: 2px;
+  color:rgba(77, 90, 229, 1);
 }
 .modal .main-btn {
+  margin-top: 24px;
   width: 169px;
   height: 56px;
 }
-
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(-360deg);
 }
